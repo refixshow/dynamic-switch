@@ -6,7 +6,7 @@ class DynamicSwitch {
   }
 
   isValid(): boolean {
-    let areConditionsValid = true;
+    let areConditionsValid: boolean = true;
     this.conditions.forEach((condition) => {
       if (condition[0]) {
         condition[1]();
