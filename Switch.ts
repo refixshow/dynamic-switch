@@ -18,15 +18,4 @@ class DynamicSwitch {
   }
 }
 
-const Test = new DynamicSwitch();
-
-Test.add(true, () => {
-  console.log("true");
-});
-Test.add(false, () => {
-  console.log("false");
-});
-
-console.log(Test.isValid());
-
 module.exports = DynamicSwitch;
